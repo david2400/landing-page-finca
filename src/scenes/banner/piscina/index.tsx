@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image } from 'primereact/image';
-
+import { Button } from 'primereact/button';
 export const Pool = () => {
   return (
     <div className="flex w-full">
@@ -13,7 +13,19 @@ export const Pool = () => {
         />
       </div>
       <div className="w-1/2">
-        <div ></div>
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="flex flex-col w-96 gap-8">
+            <h2 className="text-4xl font-bold tracking-tight italic text-black sm:text-6xl">
+              Work with us
+            </h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+              fugiat aliqua.
+            </p>
+            <Button label="Warning" severity="warning" outlined />
+          </div>
+        </div>
       </div>
     </div>
   );

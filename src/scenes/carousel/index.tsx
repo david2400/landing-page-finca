@@ -19,6 +19,7 @@ export const Carousel = ({ data }: ICarouselProps) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
+        className="z-0"
       >
         {data?.map(value => (
           <SwiperSlide className="bg-black flex justify-center">
