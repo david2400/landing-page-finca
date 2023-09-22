@@ -1,5 +1,5 @@
 import { useState, useEffect, Suspense } from 'react';
-import { Description } from '@scenes/description';
+import { Home } from '@components/home';
 import AOS from 'aos';
 import { ProgressSpinner } from 'primereact/progressspinner';
 
@@ -27,7 +27,7 @@ const index = () => {
 
   return (
     <Suspense fallback={<Progress></Progress>}>
-      {loading ? <Progress></Progress> : <Description></Description>}
+      {loading ? <Progress></Progress> : <Home></Home>}
     </Suspense>
   );
 };
