@@ -1,12 +1,16 @@
 import React from 'react';
-import '@styles/globals.css';
+import '@style/globals.css';
 import { AppProps } from 'next/app';
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { Layout } from '@common/layout';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  
   return (
     <PrimeReactProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </PrimeReactProvider>
   );
 };
