@@ -1,20 +1,33 @@
 import React from 'react';
-import { Image } from 'primereact/image';
+import { Button } from 'primereact/button';
+import { openModal } from '@components/description/modal/dataModal';
+import { useAtom } from 'jotai';
 
 export const Description = () => {
+  const [open, setOpen] = useAtom(openModal);
   return (
     <>
-      <div className="mx-auto max-w-2xl lg:mx-0">
-        <h2 className="text-4xl font-bold tracking-tight italic text-black sm:text-6xl">
-          Work with us
-        </h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
+      <div className="flex w-full justify-around items-center mx-auto py-8">
+        <div data-aos="fade-right" data-aos-duration="2000" className="w-1/2">
+          <h2 className="text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl">
+            Work with us
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000">
+          <Button
+            label="Warning"
+            severity="warning"
+            outlined
+            onClick={() => setOpen(!open)}
+          />
+        </div>
       </div>
-      <div className="relative w-full">
+      <div data-aos="fade-up" className="relative w-full">
         <img
           src="/img/banners/bannerDetails.jpg"
           alt="Image"

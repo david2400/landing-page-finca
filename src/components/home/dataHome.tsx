@@ -1,13 +1,13 @@
-import { Description } from '@/scenes/banner/description';
-import { Pool } from '@/scenes/banner/piscina';
+import { DescriptionSection } from '@components/description/container';
+import { PoolSection } from '@components/pool/details';
 import { Carousel } from '@components/carousel';
 
 export const DataHome = () => {
   return (
     <>
       <Carousel></Carousel>
-      <Description></Description>
-      <Pool></Pool>
+      <DescriptionSection></DescriptionSection>
+      <PoolSection></PoolSection>
     </>
   );
 };

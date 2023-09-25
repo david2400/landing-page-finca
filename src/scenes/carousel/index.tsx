@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { ICarouselProps } from '@interfaces/carousel';
 import { Image } from 'primereact/image';
 
@@ -9,6 +9,7 @@ export const Carousel = ({ data }: ICarouselProps) => {
     <>
       <Swiper
         spaceBetween={30}
+        effect="fade"
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -18,7 +19,7 @@ export const Carousel = ({ data }: ICarouselProps) => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="z-0"
       >
         {data?.map(value => (

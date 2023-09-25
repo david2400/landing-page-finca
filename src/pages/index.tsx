@@ -1,15 +1,16 @@
 import { useState, useEffect, Suspense } from 'react';
+import { BarLoader } from 'react-spinners';
 import { Home } from '@components/home';
 import AOS from 'aos';
-import { ProgressSpinner } from 'primereact/progressspinner';
 
 const Progress = () => {
   return (
-    <div className="card flex justify-content-center">
-      <ProgressSpinner />
+    <div className="h-screen w-full flex items-center justify-center">
+      <BarLoader color="#f6c400" height={4} />
     </div>
   );
 };
+
 const index = () => {
   const [loading, setLoading] = useState(true);
 

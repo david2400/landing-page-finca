@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'swiper/css/bundle';
 @import "primereact/resources/themes/lara-light-indigo/theme.css";     
-@import "primereact/resources/primereact.min.css";     
+@import "primereact/resources/primereact.min.css";   
+@import 'swiper/css/bundle';
+@import 'aos/dist/aos.css';
+  
