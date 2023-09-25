@@ -27,13 +27,11 @@ export const Pool = () => {
             <h2 className="text-4xl font-bold tracking-tight italic text-black sm:text-6xl">
               Work with us
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+            <p className="mt-2 text-lg leading-8 text-gray-600 text-justify">
+            Lejos de la ciudad, escuchando la naturaleza y observando un atardecer inolvidable capturaras momentos que nos acaras de tu memoria.
             </p>
             <Button
-              label="Warning"
+              label="Visualizar"
               severity="warning"
               outlined
               onClick={() => setOpen(!open)}
