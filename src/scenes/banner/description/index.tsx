@@ -6,7 +6,7 @@ import { useAtom } from 'jotai';
 export const Description = () => {
   const [open, setOpen] = useAtom(openModal);
   return (
-    <>
+    <div id='description'>
       <div className="flex w-full justify-around items-center mx-auto py-8">
         <div data-aos="fade-right" data-aos-duration="2000" className="w-1/2">
           <h2 className="text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl">
@@ -43,6 +43,6 @@ export const Description = () => {
           Sección 3
         </div>
       </div>
-    </>
+    </div>
   );
 };
