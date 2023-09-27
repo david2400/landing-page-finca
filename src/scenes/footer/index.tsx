@@ -15,14 +15,14 @@ export const Footer = () => {
               Reserva a un toque !!
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-            si quieres reservar da clic en el icono
+              si quieres reservar da clic en el icono
             </h5>
             <div className=" flex mt-6 lg:mb-0 mb-6">
               <button
                 className="flex bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <TbBrandBooking className="w-7 h-7 text-blue-900"  />
+                <TbBrandBooking className="w-7 h-7 text-blue-900" />
               </button>
               <button
                 className=" flex bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -36,9 +36,6 @@ export const Footer = () => {
               >
                 <BsInstagram className="w-6 h-6 text-rose-500" />
               </button>
-              
-            
-            
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -51,7 +48,6 @@ export const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-blueGray-500 font-semibold py-1">
               Copyright © <span id="get-current-year">2023</span>
-              
             </div>
           </div>
         </div>
