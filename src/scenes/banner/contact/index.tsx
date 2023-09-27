@@ -7,7 +7,7 @@ import React from 'react';
 
 export const Contact = () => {
   return (
-    <div className="w-full grid grid-cols-2 gap-4 py-4">
+    <div id="contact" className="w-full grid grid-cols-2 gap-4 py-4">
       <div data-aos="fade-right" className="w-full hidden lg:block">
         <Image src="/img/vino.jpeg" alt="Image" preview />
       </div>

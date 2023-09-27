@@ -8,7 +8,7 @@ export const Pool = () => {
   const [open, setOpen] = useAtom(openModal);
 
   return (
-    <div className="grid w-full grid-cols-2 gap-4 py-4">
+    <div id="pool" className="grid w-full grid-cols-2 gap-4 py-4">
       <div
         data-aos="fade-right"
         data-aos-duration="3000"

@@ -3,19 +3,14 @@ import { Navbar } from '@scenes/navbar';
 export const DataNavbar = () => {
   const items = [
     {
-      label: 'File',
+      label: 'Descripcion',
       icon: 'pi pi-fw pi-file',
       url: '/#description',
     },
     {
-      label: 'File',
+      label: 'Piscina',
       icon: 'pi pi-fw pi-file',
-      url: '/#description',
-    },
-    {
-      label: 'File',
-      icon: 'pi pi-fw pi-file',
-      url: '/#description',
+      url: '/#pool',
     },
     {
       label: 'Comodidades',
@@ -23,9 +18,9 @@ export const DataNavbar = () => {
       url: '/#comfort',
     },
     {
-      label: 'File',
+      label: 'Contactenos',
       icon: 'pi pi-fw pi-file',
-      url: '/#description',
+      url: '/#contact',
     },
   ];
   return <Navbar items={items}></Navbar>;
