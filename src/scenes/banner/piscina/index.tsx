@@ -25,10 +25,10 @@ export const Pool = () => {
             data-aos-duration="3000"
           >
             <h2 className="text-4xl font-bold tracking-tight italic text-black sm:text-6xl">
-              Work with us
+              Experiencias
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600 text-justify">
-            Lejos de la ciudad, escuchando la naturaleza y observando un atardecer inolvidable capturaras momentos que nos acaras de tu memoria.
+            Lejos de la ciudad, escuchando la naturaleza y observando un atardecer inolvidable capturaras momentos que no sacaras de tu memoria.
             </p>
             <Button
               label="Visualizar"

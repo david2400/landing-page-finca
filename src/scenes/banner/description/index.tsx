@@ -9,12 +9,12 @@ export const Description = () => {
     <div id='description'>
       <div className="flex w-full justify-around items-center mx-auto py-8">
         <div data-aos="fade-right" data-aos-duration="2000" className="w-1/2">
-          <h2 className="text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl">
-            ¿Quien somos?
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
+          <h1 className="text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl">
+          La Casita
+          </h1>
+          {<p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
           La casita es un lugar único para vivir experiencias inolvidables, a solo 10 minutos de Filandia, Quindío. Rodeado de montañas y un paisaje natural impresionante, nuestro hospedaje premiun está diseñado con cada detalle pensado para brindarte confort y plenitud.
-          </p>
+          </p>}
         </div>
         <div data-aos="fade-left" data-aos-duration="2000">
           <Button
@@ -32,13 +32,13 @@ export const Description = () => {
           className="w-full object-cover object-center"
         />
         <div className="absolute top-0 left-0 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-start text-white">
-          Sección 1
+        Naturaleza
         </div>
         <div className="absolute top-0 left-1/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-center text-white">
-          Sección 2
+        Experiencias
         </div>
         <div className="absolute top-0 left-2/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-end text-white">
-          Sección 3
+        Confort
         </div>
       </div>
     </div>

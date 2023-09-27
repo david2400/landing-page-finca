@@ -1,61 +1,58 @@
-import { IFooterProps } from '@interfaces/footer';
-import { TbBrandBooking, TbBrandAirbnb } from 'react-icons/tb';
+import { Image } from 'primereact/image';
 import { BsInstagram } from 'react-icons/bs';
+import { TbBrandBooking, TbBrandAirbnb } from 'react-icons/tb';
 import { Button } from 'primereact/button';
 
 import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="relative from-gray-100 bg-gradient-to-t bg-gray-100 pt-8 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl fonat-semibold text-blueGray-700">
-              Reserva a un toque !!
-            </h4>
-            <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-            si quieres reservar da clic en el icono
-            </h5>
-            <div className=" flex mt-6 lg:mb-0 mb-6">
+    <div className="flex w-full">
+      <div className="w-1/2">
+        <Image
+          src="/img/vino.jpeg"
+          alt="Image"  preview 
+        />
+      </div>
+      <div className="w-1/2">
+        <div className="w-full h-full flex items-center justify-center">
+          <div
+            className="flex flex-col w-96 gap-8"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
+            <h2 className="text-4xl font-bold tracking-tight italic text-center text-black sm:text-6xl">
+              Contactenos
+            </h2>
+            <h3 className="italic text-center text-slate-500">
+              Haz tu reserva aqui !!
+            </h3>
+            <div className="flex justify-center mt-6 lg:mb-0 mb-6">
               <button
-                className="flex bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="flex bg-white text-lightBlue-400 shadow-lg font-normal h-20 w-20 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <TbBrandBooking className="w-7 h-7 text-blue-900"  />
+                <TbBrandBooking className="w-8 h-8 text-blue-900"  />
               </button>
               <button
-                className=" flex bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className=" flex bg-white text-lightBlue-600 shadow-lg font-normal h-20 w-20 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <TbBrandAirbnb className="w-7 h-7 text-rose-700" />
+                <TbBrandAirbnb className="w-8 h-8 text-rose-700" />
               </button>
               <button
-                className=" flex bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className=" flex bg-white text-lightBlue-600 shadow-lg font-normal h-20 w-20 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <BsInstagram className="w-6 h-6 text-rose-500" />
+                <BsInstagram className="w-8 h-8 text-rose-500" />
               </button>
               
             
             
-            </div>
-          </div>
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto"></div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
-              Copyright © <span id="get-current-year">2023</span>
-              
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </div>
+     );
 };
