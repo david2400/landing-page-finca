@@ -1,4 +1,4 @@
-import { DataComfort } from '@components/comfort/dataComfort';
+import { DataComfort } from '@components/banner/comfort/dataComfort';
 
 export const Comfort = () => {
   return <DataComfort></DataComfort>;

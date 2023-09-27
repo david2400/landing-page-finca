@@ -8,8 +8,12 @@ export const Pool = () => {
   const [open, setOpen] = useAtom(openModal);
 
   return (
-    <div className="flex w-full">
-      <div className="w-1/2">
+    <div className="grid w-full grid-cols-2 gap-4 py-4">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        className="w-full col-span-2 sm:col-span-1 order-last lg:order-first"
+      >
         <Image
           src="/img/pool/pool.png"
           zoomSrc="/img/pool/pool2.jpeg"
@@ -17,18 +21,20 @@ export const Pool = () => {
           alt="Jacuzi"
         />
       </div>
-      <div className="w-1/2">
-        <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full col-span-2 sm:col-span-1">
+        <div className="w-full flex items-center justify-center">
           <div
             className="flex flex-col w-96 gap-8"
             data-aos="fade-left"
             data-aos-duration="3000"
           >
-            <h2 className="text-4xl font-bold tracking-tight italic text-black sm:text-6xl">
+            <h2 className="flex text-4xl font-bold justify-center tracking-tight italic text-black sm:text-6xl">
               Experiencias
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600 text-justify">
-            Lejos de la ciudad, escuchando la naturaleza y observando un atardecer inolvidable capturaras momentos que no sacaras de tu memoria.
+            <p className="justify-center text-lg leading-8 text-gray-600 text-justify">
+              Lejos de la ciudad, escuchando la naturaleza y observando un
+              atardecer inolvidable capturaras momentos que no sacaras de tu
+              memoria.
             </p>
             <Button
               label="Visualizar"

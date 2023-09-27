@@ -1,22 +1,33 @@
 import React from 'react';
 import { Button } from 'primereact/button';
-import { openModal } from '@components/description/modal/dataModal';
+import { openModal } from '@components/banner/description/modal/dataModal';
 import { useAtom } from 'jotai';
 
 export const Description = () => {
   const [open, setOpen] = useAtom(openModal);
   return (
-    <div id='description'>
-      <div className="flex w-full justify-around items-center mx-auto py-8">
-        <div data-aos="fade-right" data-aos-duration="2000" className="w-1/2">
-          <h1 className="text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl">
-          La Casita
+    <div id="description">
+      <div className="grid grid-cols-2 w-full p-4 mx-auto">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className="flex flex-col w-full col-span-2 sm:col-span-1 gap-4"
+        >
+          <h1 className="flex text-4xl font-bold max-w-2xl tracking-tight italic text-black sm:text-6xl justify-center">
+            La Casita
           </h1>
-          {<p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
-          La casita es un lugar único para vivir experiencias inolvidables, a solo 10 minutos de Filandia, Quindío. Rodeado de montañas y un paisaje natural impresionante, nuestro hospedaje premiun está diseñado con cada detalle pensado para brindarte confort y plenitud.
-          </p>}
+          <p className="flex mt-6 text-lg leading-8 text-gray-600 text-justify mx-auto">
+            La casita es un lugar único para vivir experiencias inolvidables, a
+            solo 10 minutos de Filandia, Quindío. Rodeado de montañas y un
+            paisaje natural impresionante, nuestro hospedaje premiun está
+            diseñado con cada detalle pensado para brindarte confort y plenitud.
+          </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="flex w-full col-span-2 sm:col-span-1 items-center justify-center"
+        >
           <Button
             label="Visualizar"
             severity="warning"
@@ -32,13 +43,13 @@ export const Description = () => {
           className="w-full object-cover object-center"
         />
         <div className="absolute top-0 left-0 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-start text-white">
-        Naturaleza
+          Naturaleza
         </div>
         <div className="absolute top-0 left-1/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-center text-white">
-        Experiencias
+          Experiencias
         </div>
         <div className="absolute top-0 left-2/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-end text-white">
-        Confort
+          Confort
         </div>
       </div>
     </div>

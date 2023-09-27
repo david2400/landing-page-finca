@@ -1,4 +1,4 @@
-import { Pool } from '@/scenes/banner/piscina';
+import { Pool } from '@scenes/banner/pool';
 import { ModalVideo } from '@components/pool/modal';
 
 export const DataDetailsPool = () => {

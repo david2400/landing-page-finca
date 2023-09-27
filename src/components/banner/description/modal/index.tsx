@@ -1,4 +1,4 @@
-import { DataModalVideo } from '@components/description/modal/dataModal';
+import { DataModalVideo } from '@components/banner/description/modal/dataModal';
 
 export const ModalVideo = () => {
   return <DataModalVideo></DataModalVideo>;
