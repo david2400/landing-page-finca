@@ -18,9 +18,9 @@ export const DataNavbar = () => {
       url: '/#description',
     },
     {
-      label: 'File',
+      label: 'Comodidades',
       icon: 'pi pi-fw pi-file',
-      url: '/#description',
+      url: '/#comfort',
     },
     {
       label: 'File',

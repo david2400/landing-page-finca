@@ -46,9 +46,6 @@ export const Footer = () => {
               >
                 <BsInstagram className="w-8 h-8 text-rose-500" />
               </button>
-              
-            
-            
             </div>
           </div>
         </div>
