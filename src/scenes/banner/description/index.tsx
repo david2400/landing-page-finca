@@ -17,7 +17,7 @@ export const Description = () => {
             La Casita
           </h1>
           <p className="flex mt-6 text-lg leading-8 text-gray-600 text-justify mx-auto">
-            La casita es un lugar único para vivir experiencias inolvidables, a
+            Es un lugar único para vivir experiencias inolvidables, a
             solo 10 minutos de Filandia, Quindío. Rodeado de montañas y un
             paisaje natural impresionante, nuestro hospedaje premiun está
             diseñado con cada detalle pensado para brindarte confort y plenitud.
@@ -29,7 +29,7 @@ export const Description = () => {
           className="flex w-full col-span-2 sm:col-span-1 items-center justify-center"
         >
           <Button
-            label="Visualizar"
+            label="Visualizar Video"
             severity="warning"
             outlined
             onClick={() => setOpen(!open)}
@@ -46,10 +46,10 @@ export const Description = () => {
           Naturaleza
         </div>
         <div className="absolute top-0 left-1/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-center text-white">
-          Experiencias
+          Diversion
         </div>
         <div className="absolute top-0 left-2/3 w-1/3 h-full bg-black bg-opacity-20 flex justify-center items-end text-white">
-          Confort
+          Experencias
         </div>
       </div>
     </div>

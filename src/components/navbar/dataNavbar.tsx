@@ -8,17 +8,12 @@ export const DataNavbar = () => {
       url: '/#description',
     },
     {
-      label: 'Piscina',
-      icon: 'pi pi-fw pi-file',
-      url: '/#pool',
-    },
-    {
       label: 'Comodidades',
       icon: 'pi pi-fw pi-file',
       url: '/#comfort',
     },
     {
-      label: 'Contactenos',
+      label: 'Reserva',
       icon: 'pi pi-fw pi-file',
       url: '/#contact',
     },
